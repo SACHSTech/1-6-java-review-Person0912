@@ -1,20 +1,34 @@
 package gr11review.part1;
 import java.io.*;
 
+/**
+ * A program Review2.java that allows the user to select one out of four joke options.
+ * 
+ * @author: Kayla Jin
+ */
+
 public class Review2 {
+    
+    /**
+     * Main method to execute the program logic
+     * 
+     * @param args Command-line arguments (not used)
+     * @throws IOException If there is an error during input
+     */
     public static void main(String[] args) throws IOException {
 
-        String strOption;
-
+        // Keyboard object to receive user input
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
+        // Shows the user the joke options
         System.out.println("0 - print a joke about your hair");
         System.out.println("1 - print a joke about your feet");
         System.out.println("2 - print a joke about your clothes");
         System.out.println("3 - print a joke about your teacher");
 
+        // Allows the user to choose a joke option
         System.out.print("Choose a menu option: ");
-        strOption = keyboard.readLine();
+        String strOption = keyboard.readLine();
 
         // Prints out different jokes based on the user's input
         switch (strOption) {

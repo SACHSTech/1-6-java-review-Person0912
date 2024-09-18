@@ -1,7 +1,22 @@
 package gr11review.part1;
 import java.io.*;
 
+/**
+ * A program Review1.java that asks the user the enter a 
+ * month number and day and then prints the day of the year.
+ * This program assumes it is not a leap year.
+ * 
+ * @author: Kayla Jin
+ */
+
 public class Review1 {
+
+    /**
+     * Main method to execute the program logic
+     * 
+     * @param args Command-line arguments (not used)
+     * @throws IOException If there is an error during input
+     */
     public static void main(String[] args) throws IOException {
 
         // Allows user input
